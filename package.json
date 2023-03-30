@@ -1,10 +1,15 @@
 {
   "devDependencies": {
     "@nomicfoundation/hardhat-toolbox": "^2.0.1",
+    "@openzeppelin/hardhat-upgrades": "^1.22.1",
     "hardhat": "^2.12.7"
   },
   "dependencies": {
     "@chainlink/contracts": "^0.6.1",
-    "@openzeppelin/contracts": "^4.8.1"
+    "@opengsn/contracts": "^3.0.0-beta.6",
+    "@openzeppelin/contracts": "^4.8.1",
+    "defender-admin-client": "^1.39.0",
+    "defender-relay-client": "^1.39.0",
+    "dotenv": "^16.0.3"
   }
 }

@@ -5,9 +5,11 @@ import "@chainlink/contracts/src/v0.8/interfaces/AggregatorV3Interface.sol";
 
 import {IERC20} from "./IERC.sol";
 
+import "@opengsn/contracts/src/ERC2771Recipient.sol";
 
 
-contract SwapToken {
+
+contract SwapToken is ERC2771Recipient {
 
     address owner;
     IERC20 public tokenA;
@@ -96,5 +98,5 @@ contract SwapToken {
 
     fallback() external{}
 
-    function withdrawETH(uint _value) {}
+    function withdrawETH (uint _value) public {}
 }
